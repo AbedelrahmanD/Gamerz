@@ -1,0 +1,82 @@
+.gamesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.gamesContainer .shimmer,
+.game {
+    background-color: var(--primary);
+    border-radius: 8px;
+    height: 350px;
+    width: 244px;
+    margin: 10px 7px;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px black;
+    cursor: zoom-in;
+    position: relative;
+}
+
+.game:hover {
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.356);
+}
+
+.game:hover img {
+    transform: scale(1.2);
+}
+
+.game .gameImageContainer {
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+}
+
+.game img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+
+.game h3 {
+    padding: 5px;
+    color: var(--text);
+    font-size: 1.5rem;
+    margin: 0;
+
+}
+
+.game span {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    background-color: var(--body);
+    color: var(--text);
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 0 0.3rem rgba(0, 0, 0, 0.336);
+}
+
+@media screen and (max-width:800px) {
+
+    .gamesContainer .shimmer,
+    .game {
+        width: 240px;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    .gamesContainer .shimmer,
+    .game {
+        width: 300px;
+    }
+}

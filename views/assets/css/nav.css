@@ -1,0 +1,95 @@
+.navContainer {
+    display: flex;
+    max-width: 1500px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo {
+    color: var(--text);
+    font-size: 2rem;
+    transform: scale(1.5);
+}
+
+.navSearch {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: var(--primary);
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    max-width: 50%;
+}
+
+.navSearch button {
+    color: var(--secondary);
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.navSearch input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    color: var(--text);
+    font-size: 2rem;
+    width: 100%;
+}
+
+.navSearch input:focus {
+    color: var(--primary);
+    background-color: var(--text);
+}
+
+.navSearch input:focus+.iconify {
+    color: var(--primary);
+}
+
+.navMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navMenu .iconify {
+    color: var(--text);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.navMenu .menuTitle {
+    color: var(--text);
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+    margin: 0 5px;
+}
+
+.navMenu .menuTitle::before {
+    content: "";
+    background-color: var(--text);
+    position: absolute;
+    top: 150%;
+    height: 3px;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.2s;
+
+}
+
+.navMenu .menuTitle:hover::before {
+    top: 100%;
+    opacity: 1;
+}

@@ -1,0 +1,12 @@
+footer {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    border-top: 1px solid var(--primary);
+}
+
+footer * {
+    font-size: 5rem;
+    color: var(--text);
+}
